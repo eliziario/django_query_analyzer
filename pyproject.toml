@@ -1,8 +1,8 @@
 [project]
-name = "django-query-analyser"
-version = "0.1.0"
+name = "django-query-index-analyzer"
+version = "0.1.4"
 description = "CLI tool to analyze Django ORM filter, exclude, and annotate usage on a specific model."
-authors = [{ name = "Your Name", email = "your.email@example.com" }]
+authors = [{ name = "Marcos Eliziario", email = "opensource@msantos.dev" }]
 license = "MIT"
 readme = "README.md"
 requires-python = ">=3.8"
