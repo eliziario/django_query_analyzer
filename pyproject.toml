@@ -1,0 +1,21 @@
+[project]
+name = "django-query-analyser"
+version = "0.1.0"
+description = "CLI tool to analyze Django ORM filter, exclude, and annotate usage on a specific model."
+authors = [{ name = "Your Name", email = "your.email@example.com" }]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = ["pathspec"]
+
+[project.scripts]
+django-query-analyzer = "cli:run"
+
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

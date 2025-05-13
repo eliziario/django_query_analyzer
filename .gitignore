@@ -1,0 +1,56 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.class
+
+# Test and coverage output
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.xml
+*.cover
+.cache
+.pytest_cache/
+nosetests.xml
+test-results.xml
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# MyPy and Pyre type checker files
+.mypy_cache/
+.dmypy.json
+.pyre/
+
+# VS Code and JetBrains project files
+.vscode/
+.idea/
+
+# Mac and system files
+.DS_Store
+Thumbs.db
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Lock files
+poetry.lock
+Pipfile.lock
+
+# Local settings
+local_settings.py
+
+# Logs
+*.log
+
+# GitHub workflows caches
+*.log.*
