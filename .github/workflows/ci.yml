@@ -46,11 +46,14 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Build and publish to PyPI
-        env:
-          TWINE_USERNAME: __token__
-          TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
+      - name: Install build tools
         run: |
-          pip install build twine
-          python -m build
-          twine upload dist/*
+          python -m pip install --upgrade build
+
+      - name: Build package
+        run: python -m build
+
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          print-hash: true
